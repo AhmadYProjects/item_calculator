@@ -1,6 +1,7 @@
 class Item:
     def __init__(
             self,
+            name = "",
             gold=0,
             attack_damage=0,
             attack_speed=0,
@@ -23,9 +24,12 @@ class Item:
             tenacity=0,
             stats_value=0,
             gold_efficiency=0,
-            movement_speed=0
+            flat_movement_speed=0,
+            percent_movement_speed = 0,
+            on_hit_damage = 0,
+            critical_strike_damage = 0
     ):
-        self.criticalStrikeChance = critical_strike_chance
+        self.critical_strike_chance = critical_strike_chance
         self.life_steal = life_steal
         self.armor_penetration = armor_penetration
         self.gold = gold
@@ -35,7 +39,7 @@ class Item:
         self.ability_power = ability_power
         self.ability_haste = ability_haste
         self.mana = mana
-        self.manaRegeneration = mana_regeneration
+        self.mana_regeneration = mana_regeneration
         self.heal_and_shield_power = heal_and_shield_power
         self.omnivamp = omnivamp
         self.flat_magic_penetration = flat_magic_penetration
@@ -45,9 +49,14 @@ class Item:
         self.armor = armor
         self.magic_resistance = magic_resistance
         self.tenacity = tenacity
-        self.movement_speed = movement_speed
+        self.flat_movement_speed = flat_movement_speed
         self.stats_value = stats_value
         self.gold_efficiency = gold_efficiency
+        self.on_hit_damage = on_hit_damage
+        self.critical_strike_damage = critical_strike_damage
+        self.percent_movement_speed = percent_movement_speed
+        self.name = name
+
 
 
 
