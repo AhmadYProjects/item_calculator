@@ -30,5 +30,4 @@ my_items = [ruby_crystal, vamp_scepter, infinity_edge]
 print("--- League of Legends Item Efficiency Calculator ---")
 for item in my_items:
     eff = engine.calculate_efficiency(item)
-    # Nudge: Changed 'Item' to 'item' here:
     print(f"{item.name:<20} | Gold Cost: {item.gold:<5} | Efficiency: {eff:.1f}%")
