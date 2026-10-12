@@ -41,7 +41,6 @@ def get_gold_values():
         "attack_speed": dagger.gold / dagger.attack_speed,
         "flat_movement_speed": boots.gold / boots.flat_movement_speed,
 
-
         "armor_penetration": (last_whisper.gold - (
                     long_sword.gold / long_sword.attack_damage) * last_whisper.attack_damage) / last_whisper.armor_penetration,
         "heal_and_shield_power": (forbidden_idol.gold - (
@@ -58,8 +57,9 @@ def get_gold_values():
                     dagger.gold / dagger.attack_speed) * recurve_bow.attack_speed) / recurve_bow.on_hit_damage,
         "percent_movement_speed": (winged_moonplate.gold - (
                     ruby_crystal.gold / ruby_crystal.health) * winged_moonplate.health) / winged_moonplate.percent_movement_speed,
-        #"critical_strike_damage" : (infinity_edge.gold -
-        #                           (long_sword.gold/long_sword.attack_damage*infinity_edge.attack_damage))/ infinity_edge.critical_strike_damage,
+        "critical_strike_damage" : (infinity_edge.gold -
+                                   (long_sword.gold/long_sword.attack_damage*infinity_edge.attack_damage))/ infinity_edge.critical_strike_damage,
     }
 
     return GOLD_VALUES
+

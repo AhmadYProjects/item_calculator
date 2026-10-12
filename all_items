@@ -1,0 +1,199 @@
+{
+  "Your Cut": {
+    "id": 3400,
+    "tier": 1,
+    "type": ["Distributed"],
+    "limit": "Only granted by {{cai|Death from Below|Pyke}}.",
+    "modes": {
+      "classic sr 5v5": true,
+      "aram": true,
+      "nb": true,
+      "arena": true
+    },
+    "effects": {
+      "consume": "Grants {{g|text=*none*}}{{pp|100;112;140;176;220;274;300|-7+x;0+|type=target's kill bounty|color=gold}}, increased by {{g|100}} for [[First Blood]]. '''Can be used while [[death|dead]].'''"
+    }
+  },
+  "Abyssal Mask": {
+    "id": 8020,
+    "tier": 3,
+    "type": ["Legendary"],
+    "itemlimit": "Blight",
+    "modes": {
+      "classic sr 5v5": true,
+      "aram": true,
+      "nb": true,
+      "arena": true
+    },
+    "menu": {
+      "tank": true
+    },
+    "stats": {
+      "ah": 15,
+      "hp": 300,
+      "mr": 45
+    },
+    "effects": {
+      "pass": {
+        "name": "Unmake",
+        "unique": true,
+        "description": "Enemy champions within {{tt|700 units|center to edge}} of you become cursed, {{as|reducing their magic resistance by 30%|magic penetration}}."
+      }
+    },
+    "recipe": ["Kindlegem", "Negatron Cloak"],
+    "buy": 2650
+  },
+  "Aether Wisp": {
+    "id": 3113,
+    "nickname": ["spooky ghost"],
+    "tier": 2,
+    "type": ["Epic"],
+    "modes": {
+      "classic sr 5v5": true,
+      "aram": true,
+      "nb": true,
+      "arena": false
+    },
+    "menu": {
+      "mage": true,
+      "movement": true
+    },
+    "stats": {
+      "ap": 30,
+      "ms": 4
+    },
+    "recipe": ["Amplifying Tome"],
+    "buy": 900
+  },
+  "Amplifying Tome": {
+    "id": 1052,
+    "nickname": ["amptome", "book"],
+    "tier": 1,
+    "type": ["Basic"],
+    "modes": {
+      "classic sr 5v5": true,
+      "aram": true,
+      "nb": true,
+      "arena": false
+    },
+    "menu": {
+      "mage": true,
+      "support": true
+    },
+    "stats": {
+      "ap": 20
+    },
+    "buy": 400
+  },
+  "Anathema's Chains": {
+    "id": 228001,
+    "tier": 3,
+    "type": ["Legendary"],
+    "caption": "\"She swore to dedicate her life to his destruction...\"",
+    "modes": {
+      "classic sr 5v5": false,
+      "aram": false,
+      "nb": false,
+      "arena": true
+    },
+    "menu": {
+      "tank": true,
+      "support": true
+    },
+    "stats": {
+      "hp": 600,
+      "ah": 15
+    },
+    "effects": {
+      "act": {
+        "name": "Vow",
+        "unique": true,
+        "description": "Curse the target enemy champion, designating them as your ''Nemesis''. Choosing a new ''Nemesis'' removes the curse from the old one. Cannot be cast for 15 seconds while in combat with enemy champions.",
+        "cd": "90",
+        "range": "Global"
+      },
+      "pass": {
+        "name": "Vendetta",
+        "unique": true,
+        "description": "Take 20% reduced damage from your ''Nemesis'' and reduce their tenacity by 20% while they are within {{tip|cr|icononly=true}} 700 units of you."
+      }
+    },
+    "buy": 2500,
+    "sellratio": 0.5
+  },
+  "Anti-Tower Socks": {
+    "id": 1508,
+    "tier": 1,
+    "type": ["Minion"],
+    "caption": "\"They're a little stinky, but effective.\"",
+    "modes": {
+      "classic sr 5v5": true,
+      "aram": true,
+      "nb": true
+    },
+    "effects": {
+      "pass": {
+        "unique": true,
+        "description": "{{tip|Turret}} basic attacks are modified to deal {{as|{{pp|key=%|14;11;8|Outer;Inner;Inhibitor/Nexus|type=turret type}} of this minion's '''maximum''' health}} as {{tt|pre-mitigation damage|Damage calculated before modifiers}}."
+      }
+    }
+  },
+  "Arcane Sweeper (Trinket)": {
+    "id": 3348,
+    "formatname": "Arcane Sweeper",
+    "tier": 1,
+    "type": ["Trinket"],
+    "limit": "Cannot be activated during the first 120 seconds of the game.",
+    "modes": {
+      "classic sr 5v5": false,
+      "aram": false,
+      "nb": false,
+      "arena": true
+    },
+    "effects": {
+      "act": {
+        "description": "Summons a mist over the target location for 5 seconds, granting {{tip|sight}} of the area in a 375 radius and {{tip|true sight|revealing}} enemy {{tip|stealthed trap|traps}} within for 3 seconds.",
+        "cd": "30",
+        "range": "800"
+      }
+    }
+  },
+  "Archangel's Staff": {
+    "id": 3003,
+    "nickname": ["aa"],
+    "tier": 3,
+    "type": "=>Seraph's Embrace",
+    "itemlimit": "Manaflow",
+    "itemlimit2": "Lifeline",
+    "modes": {
+      "classic sr 5v5": true,
+      "aram": true,
+      "nb": true,
+      "arena": true
+    },
+    "menu": {
+      "mage": true
+    },
+    "stats": {
+      "ap": 70,
+      "ah": 25,
+      "mana": 600
+    },
+    "effects": {
+      "pass": {
+        "name": "Awe",
+        "unique": true,
+        "description": "Grants {{as|ability power}} equal to {{as|1% '''bonus''' mana}}."
+      },
+      "pass2": {
+        "name": "Manaflow",
+        "unique": true,
+        "description": "Grants a charge every 8 seconds, up to 5 charges. Affecting an enemy or ally with an [[champion ability|ability]] consumes a charge to grant {{as|5 '''bonus''' mana}}, increased to {{as|10|mana}} if they are a champion, up to a '''maximum''' of {{as|360 '''bonus''' mana}}."
+      },
+      "pass3": {
+        "description": "Transforms into {{ii|Seraph's Embrace}} at {{as|360 '''bonus''' mana}}."
+      }
+    },
+    "recipe": ["Tear of the Goddess", "Lost Chapter", "Fiendish Codex"]
+  }
+}
